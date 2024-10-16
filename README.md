@@ -20,4 +20,4 @@ Tech Stack:
 •  Spring Framework: Manages the backend logic and dependency injection.
   
 •  Maven: Manages project dependencies and builds the application.
-    •
+    
