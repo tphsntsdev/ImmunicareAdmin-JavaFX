@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.immunicare.immunicare_admin.controller.Registration">
+   <children>
+      <Label layoutX="260.0" layoutY="289.0" text="Title" />
+      <Button layoutX="110.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: #66b2b2;" onAction="#Upload" text="Upload" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4000000059604645" green="0.6980392336845398" blue="0.6980392336845398" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="242.0" layoutY="171.0" text="First Name" />
+      <Label layoutX="246.0" layoutY="250.0" text="License #" />
+      <Label fx:id="imageSignature" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="195.0" prefHeight="103.0" prefWidth="134.0" text="No Image" textAlignment="CENTER" />
+      <ChoiceBox fx:id="titleChoice" layoutX="313.0" layoutY="285.0" prefWidth="150.0" />
+      <TextField fx:id="firstName" layoutX="313.0" layoutY="167.0" />
+      <TextField fx:id="licenseNumber" layoutX="313.0" layoutY="246.0" />
+      <TextField fx:id="lastName" layoutX="313.0" layoutY="207.0" />
+      <Label layoutX="243.0" layoutY="211.0" text="Last Name" />
+      <Button layoutX="361.0" layoutY="339.0" mnemonicParsing="false" style="-fx-background-color: #66b2b2;" onAction="#CreateAccount" text="Submit" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4000000059604645" green="0.6980392336845398" blue="0.6980392336845398" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="70.0" layoutY="124.0" text="Create an Account:" textFill="#66b2b2">
+         <font>
+            <Font name="Calibri Light" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
